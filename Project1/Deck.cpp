@@ -17,7 +17,8 @@ void Deck::PrintDeck() {
 	}
 }
 
-
 Deck::~Deck() {
+	ArrayNumbers;
+	ArraySuit;
 }
 
