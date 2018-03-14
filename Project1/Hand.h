@@ -9,9 +9,15 @@ private:
 
 public:
 	Hand();
-	Hand(string);
+	Hand(string name);
 	string GetName();
 	void AppendCard(Card card);
+	void PrintHand();
+	Card Discard(int amt);
+	bool operator==(Hand hand);
+	bool VoidHand();
+	void FeedFromBack(Card card);
+	int SizeCards();
 
 	~Hand();
 };
